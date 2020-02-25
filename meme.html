@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="memeStyle.css">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <div class="container">
+      <!--   /* div for the header */ -->
+        <div class="header-div">
+            <h1>Meme Generator</h1>
+
+        </div>
+
+        <!-- This the div that conatins all the functionalities. It is divided into 2 other divs: 
+        the form-container  and the meme-container -->
+        <div class="app-div">
+            <div class="form-container">
+                <!--  --->
+                <div class="form-div">
+                    <form id="meme-form" action="">
+                        <label for="upper-text">Meme Upper Text</label> <br>
+                        <input placeholder="optional text" type="text" name="up-txt-name" id="upper-text" value=""> <br>
+
+                        <label for="user-image">Meme Image</label><br>
+                        <input required="required" placeholder="required: please enter an image " type="text" name="user-image-url" id="user-image" value=""  ><br>
+
+                        <label for="lower-text">Meme Lower Text</label><br>
+                        <input placeholder="optional text" type="text" name="lo-txt-name" id="lower-text" value=""><br>
+                        <input type="submit" value="Submit Meme" id="submit-meme">
+
+                    </form>
+                    <span>** Please enter a link to an image</span>
+                </div>
+            </div>
+             <!--  --->
+            <div class="meme-container">
+                
+            </div>
+        </div>
+        <script src="memeScript.js"></script>
+    </div>
+    
+</body>
+</html>
